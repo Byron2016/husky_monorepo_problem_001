@@ -1,0 +1,18 @@
+{
+  "name": "husky_monorepo_problem",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rm -rf apps/a/node_modules/ && rm -rf apps/b/node_modules/",
+    "dev:a": "npm run dev --workspace=a",
+    "dev:b": "npm run dev --workspace=b",
+    "dev:all": "npm run dev:a && npm run dev:b"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "workspaces": [
+    "apps/a",
+    "apps/b"
+  ]
+}
