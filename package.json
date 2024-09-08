@@ -5,7 +5,8 @@
     "clean": "rm -rf apps/a/node_modules/ && rm -rf apps/b/node_modules/",
     "dev:a": "npm run dev --workspace=a",
     "dev:b": "npm run dev --workspace=b",
-    "dev:all": "npm run dev:a && npm run dev:b"
+    "dev:all": "npm run dev:a && npm run dev:b",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,8 @@
   "workspaces": [
     "apps/a",
     "apps/b"
-  ]
+  ],
+  "devDependencies": {
+    "husky": "^9.1.5"
+  }
 }
