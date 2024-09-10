@@ -6,7 +6,11 @@
     "dev:a": "npm run dev --workspace=a",
     "dev:b": "npm run dev --workspace=b",
     "dev:all": "npm run dev:a && npm run dev:b",
-    "prepare": "husky"
+    "prepare": "husky",
+    "format": "prettier . --check",
+    "format:w": "prettier . --write",
+    "lint": "eslint . ",
+    "imp": "echo '--->en raiz---->'"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +21,14 @@
     "apps/b"
   ],
   "devDependencies": {
-    "husky": "^9.1.5"
+    "@eslint/js": "^9.10.0",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
+    "prettier": "3.3.3",
+    "typescript-eslint": "^8.5.0"
   }
 }

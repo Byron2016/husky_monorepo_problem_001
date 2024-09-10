@@ -1,0 +1,3 @@
+{
+  "**/*": ["npm run format_b:w", "npm run lint_b"]
+}

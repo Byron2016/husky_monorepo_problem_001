@@ -4,7 +4,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "node index.js",
-    "prepare": "cd ../.. && husky apps/b/.husky"
+    "lint_b": "eslint . ",
+    "format_b": "prettier . --check",
+    "format_b:w": "prettier --write --ignore-unknown",
+    "imp_b": "echo '--->en b---->'"
   },
   "keywords": [],
   "author": "",
